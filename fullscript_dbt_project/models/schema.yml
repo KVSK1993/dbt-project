@@ -1,0 +1,58 @@
+
+version: 2
+
+models:
+  - name: customer_dim
+    description: "Customer dim model"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: c_name
+        description: "Customer Name"
+      - name: c_address
+        description: "Customer Address"
+      - name: c_phone
+        description: "Customer Phone"
+      - name: c_acctbal
+        description: "Customer Account Balance"
+      - name: c_mktsegment
+        description: "Customer Market Segment"
+      - name: c_nationkey
+        description: "Nation Key"
+      - name: first_order_date
+        description: "Customer's First Order Date"
+      - name: most_recent_order_date
+        description: "Customer's Most Recent Order Date"
+      - name: number_of_orders
+        description: "Customer's Number of Orders"
+
+  - name: orders_fact
+    description: "Orders fact model"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Customer Id that place the order"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('customer_dim')
+              field: customer_id
+      - name: order_date
+        description: "Order Date"
+      - name: order_status
+        description: "Order Status"
+      - name: total_price
+        description: "Total Price"
+      - name: order_priority
+        description: "Order Price"
+      - name: clerk
+        description: "Clerk"
+      - name: shippriority
+        description: "Ship Priority"

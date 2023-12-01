@@ -1,0 +1,13 @@
+fullscript_dbt_project:
+  outputs:
+    dev:
+      account: ytbaoiq-om00800
+      database: FULLSCRIPT
+      password: N@raks3991
+      role: ACCOUNTADMIN
+      schema: Retail
+      threads: 1
+      type: snowflake
+      user: kv3singh
+      warehouse: COMPUTE_WH
+  target: dev

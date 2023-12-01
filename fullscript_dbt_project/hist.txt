@@ -1,0 +1,16 @@
+   55  cd ..
+   56  git clone https://github.com/KVSK1993/dbt.git
+   57  ls
+   58  cd fullscript_dbt_project
+   59  git staus -s
+   60  git status -s
+   61  git status -s
+   62  ls
+   63  cd ..
+   64  git status -s
+   65  dbt test
+   66  dbt test
+   67  cd fullscript_dbt_project
+   68  dbt test
+   69  dbt test
+   70  history
