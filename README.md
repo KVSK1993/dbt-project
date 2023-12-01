@@ -14,7 +14,7 @@ Make sure you have python and `pyenv` (Python environment manager) installed in 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/your-db-project.git
+   git clone https://github.com/KVSK1993/dbt-project.git
 
 2. **Execute the subsequent script to set up the Python environment and install essential dependencies:**
     sh setup_dev_env.sh
@@ -24,29 +24,35 @@ Make sure you have python and `pyenv` (Python environment manager) installed in 
     Copy the sample configuration file:
     cp profiles/profiles.yml.sample profiles/profiles.yml
 
-    In your prompt type: export DBT_PROFILES_DIR=/path/to/folder
+    In your prompt type: 
+    ```bash
+    export DBT_PROFILES_DIR=/path/to/folder
     This command will reassign the location of your profiles.yml to the folder mentioned in /path/to/folder.
 
 4. **Initialize dbt Project:**
-
+    ```bash
     dbt init
 
 ## Usage
 Explain how to run and use the dbt project.
 
 1. **Run dbt:**
+    ```bash
     dbt run
     This command will execute the dbt models and populate it in the data warehouse.
 
 2. **Test dbt:**
+    ```bash
     dbt test
     Run tests to ensure the integrity of the data.
 
 3. **Generate Documentation:**
+    ```bash
     dbt docs generate
     This command generates documentation for the dbt project.
 
 4. **Serve Documentation:**
+    ```bash
     dbt docs serve
     With this command, one can view the documentation for the dbt project.
 
