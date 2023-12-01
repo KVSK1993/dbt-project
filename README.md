@@ -1,4 +1,3 @@
-# dbt
 # Fullscript
 
 ## Overview
