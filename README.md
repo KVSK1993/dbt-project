@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Welcome to my new dbt project!
 
 # Fullscript
 
@@ -17,11 +17,13 @@ Make sure you have python and `pyenv` (Python environment manager) installed in 
    git clone https://github.com/KVSK1993/dbt-project.git
 
 2. **Execute the subsequent script to set up the Python environment and install essential dependencies:**
+    ```bash
     sh setup_dev_env.sh
 
 3. **Configuration:**
 
     Copy the sample configuration file:
+    ```bash
     cp profiles/profiles.yml.sample profiles/profiles.yml
 
     In your prompt type: 
@@ -34,7 +36,6 @@ Make sure you have python and `pyenv` (Python environment manager) installed in 
     dbt init
 
 ## Usage
-Explain how to run and use the dbt project.
 
 1. **Run dbt:**
     ```bash
@@ -57,7 +58,7 @@ Explain how to run and use the dbt project.
     With this command, one can view the documentation for the dbt project.
 
 
-## Folder Structure**
+## Folder Structure
 There are different folders with in the project for different purposes. For instance models folder contains all the model files, logs folder contains the dbt.log, any macros can be defined with in files in the macro folder.
 
 ### Resources:

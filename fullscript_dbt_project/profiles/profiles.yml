@@ -1,9 +1,9 @@
 fullscript_dbt_project:
   outputs:
     dev:
-      account: ytbaoiq-om00800
+      account: **************
       database: FULLSCRIPT
-      password: N@raks3991
+      password: **********
       role: ACCOUNTADMIN
       schema: Retail
       threads: 1
