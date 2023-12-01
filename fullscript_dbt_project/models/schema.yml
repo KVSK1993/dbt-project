@@ -12,6 +12,8 @@ models:
           - not_null
       - name: c_name
         description: "Customer Name"
+        tests:
+          - string_not_empty
       - name: c_address
         description: "Customer Address"
       - name: c_phone
@@ -48,6 +50,8 @@ models:
         description: "Order Date"
       - name: order_status
         description: "Order Status"
+        tests:
+          - string_not_empty
       - name: total_price
         description: "Total Price"
       - name: order_priority
