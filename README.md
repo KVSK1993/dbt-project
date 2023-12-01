@@ -64,7 +64,7 @@ Make sure you have python and `pyenv` (Python environment manager) installed in 
 
 
 ## Folder Structure
-There are different folders with in the project for different purposes. For instance models folder contains all the model files, logs folder contains the dbt.log, any macros can be defined with in files in the macro folder.
+There are different folders with in the project for different purposes. For instance models folder contains all the model files, test folder contains test, any macros can be defined with in files in the macro folder.
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
