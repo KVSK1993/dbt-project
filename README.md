@@ -1,12 +1,14 @@
+Welcome to your new dbt project!
+
 # Fullscript
 
 ## Overview
 
-Briefly describe the purpose and scope of the dbt project. Include any relevant context or background information.
+This is a demo project using snowflake's sample data TPCH_SF1 as source. It contains two models: customer dimension and order facts.
 
 ## Prerequisites
 
-List any prerequisites that users need to have installed or set up before running the dbt project. This may include databases, data sources, or any other dependencies.
+Make sure you have python and `pyenv` (Python environment manager) installed in the system.
 
 ## Setup
 
@@ -14,7 +16,7 @@ List any prerequisites that users need to have installed or set up before runnin
    ```bash
    git clone https://github.com/yourusername/your-db-project.git
 
-2. **Run the setup_dev_env.sh script:**
+2. **Execute the subsequent script to set up the Python environment and install essential dependencies:**
     sh setup_dev_env.sh
 
 3. **Configuration:**
@@ -22,16 +24,19 @@ List any prerequisites that users need to have installed or set up before runnin
     Copy the sample configuration file:
     cp profiles/profiles.yml.sample profiles/profiles.yml
 
+    In your prompt type: export DBT_PROFILES_DIR=/path/to/folder
+    This command will reassign the location of your profiles.yml to the folder mentioned in /path/to/folder.
+
 4. **Initialize dbt Project:**
 
     dbt init
 
-**Usage**
+## Usage
 Explain how to run and use the dbt project.
 
 1. **Run dbt:**
     dbt run
-    This command will execute the dbt models and populate the data warehouse.
+    This command will execute the dbt models and populate it in the data warehouse.
 
 2. **Test dbt:**
     dbt test
@@ -42,9 +47,16 @@ Explain how to run and use the dbt project.
     This command generates documentation for the dbt project.
 
 4. **Serve Documentation:**
-    dbt docs generate
-     This command serves documentation for the dbt project.
+    dbt docs serve
+    With this command, one can view the documentation for the dbt project.
 
 
-**Folder Structure**
-Briefly explain the structure of your dbt project, highlighting important directories and their purposes.
+## Folder Structure**
+There are different folders with in the project for different purposes. For instance models folder contains all the model files, logs folder contains the dbt.log, any macros can be defined with in files in the macro folder.
+
+### Resources:
+- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
+- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
+- Find [dbt events](https://events.getdbt.com) near you
+- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
